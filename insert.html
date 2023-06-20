@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Inserir</title>
+
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/insert.css">
+</head>
+<body>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="insert.html">Inserir</a></li>
+			<li><a href="update.html">Alterar</a></li>
+			<li><a href="search.html">Pesquisar</a></li>
+			<li><a href="delete.html">Deletar</a></li>
+		</ul>
+	</nav>
+<main>
+
+      <form class="form" action="php/cls.php"  method="POST">
+        <div class="content">
+            <h2>Razão Social</h2>
+            <input class="input-text" type="text" name="razaoSocial" required>
+            <h2>Estado</h2>
+            <input class="input-text" type="text" name="estadoTransp" required>
+            <h2>Nome Fantasia</h2>
+            <input class="input-text" type="text" name="nomeFantasia" required> 
+         	<h2 >CNPJ</h2>
+            <input class="input-text" type="text" name="cnpjTransp"  required>
+            <h2>Apólice</h2>
+            <input class="input-text" type="text" name="apoliceTransp" required> 
+        </div>
+        <div class="button">
+            <input class="input-button" type="submit" value="Inserir" name="botao">
+            <input class="input-button" type="reset" value="limpar">
+        </div>
+    </form>
+
+</main>
+
+
+</body>
+</html>

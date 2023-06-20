@@ -1,0 +1,40 @@
+main{
+	width: 100%;
+	height: 98vh;
+}
+	.titulo{
+		height: 50%;
+
+		display: flex;
+		justify-content: center;
+		align-items: center	;
+	}
+	.titulo h1{
+		font-size: 64px;
+		font-weight: bold;
+		color: white;
+	}
+ .links{
+	height: 50%;
+	width: 100%;
+
+	display: inline-flex;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+ .links a{
+	text-decoration: none;
+	font-size: 48px;
+	color: white;
+	border: 2px solid black;
+	padding: 32px;
+	background-color: black;
+	border-radius: 16px;
+	transition: 0.2s;
+
+
+}
+ .links a:hover{
+	transform: translateY(-50px) scale(1.2);
+	border: 2px solid white;
+}

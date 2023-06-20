@@ -1,0 +1,23 @@
+body{
+	height: 100%;
+	width: 100%;
+	font-family: arial	;
+	background-color: #222222;
+}
+nav{
+	background-color: #15191c;
+	padding: 2% 0;
+}
+nav ul {
+display: flex;
+justify-content: space-around;
+}
+nav ul li{
+
+}
+nav ul li a{
+	text-decoration: none;
+	font-size: 32px;
+	color: white;
+	font-weight: 700;
+}

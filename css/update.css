@@ -1,0 +1,63 @@
+<style>
+form{
+	font-family: arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 32px 0;
+}
+form p, h1{
+	font-size: 22px;
+	font-weight: bold;
+	color: white;
+	margin: 16px 0;
+}
+.titulo{
+	font-size: 28px;
+}
+.input-text{
+	font-size: 24px;
+	margin: 0 0 16px;
+	border-radius: 8px;
+}
+.input-button{
+	margin: auto auto;
+	padding: 16px;
+	font-size: 24px;
+	font-weight: 700;
+	background-color: black;
+	color: white;
+	border-radius: 16px;
+	transition: 0.2s;
+}
+.input-button:hover{
+	cursor: pointer;
+	transform: scale(1.2) ;
+	border-bottom:2px solid white ;
+}
+.aviso{
+	font-family: arial;
+	text-align: center;
+	font-size: 24px;
+}
+
+.form-update tr{
+
+}
+
+.form-update td{
+font-size: 24px;
+font-family: arial;
+color: white;
+padding: 8px;
+font-weight: bold;
+;
+}
+.form-update td input{
+	font-size: 24px;
+	margin: 0 0 16px;
+	border-radius: 8px;
+}
+</style>

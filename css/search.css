@@ -1,0 +1,68 @@
+<style>
+main{
+	width: 100%;
+	height: 100%;
+}
+
+.formulario{
+	display: flex;
+	justify-content: center;
+}
+.formulario input, select{
+	font-size: 24px;
+	margin: 8px;
+	padding: 16px;
+	border-radius: 8px;
+}
+form{
+	display: flex;
+}	
+form h1{
+	color: white;
+	font-family: arial;
+}
+.escolha{
+	text-align: center;
+	position: relative;
+	width: 100%;
+	height: 10vh;
+	background-color: #222222;
+	font-size: 40px;
+	color: white;
+	font-family: arial;
+}
+section{
+
+}
+section iframe{
+	width: 100%;
+	height: 80vh;
+}
+.table-box{
+	display: flex;
+	justify-content: center;
+}
+table{
+	background-color: white;
+	border: 5px solid white;
+	font-family: arial;
+}
+table .cabecalho td{
+	padding: 0 16px;
+	margin: 0;
+	border-bottom: 2px solid black;
+
+	font-size: 32px;
+	color: black;
+}
+table .conteudo td{
+	padding: 0 8px;
+	margin: 0;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+
+	font-size: 18px;
+	color: black;
+
+}
+</style>
