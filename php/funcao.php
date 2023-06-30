@@ -101,6 +101,7 @@ public function Insert(){
 	  $cnpj_cpf = preg_replace("/\D/", '', $this->cnpjTransp);
 	  $cnpjCerto = preg_replace("/(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/", "\$1.\$2.\$3/\$4-\$5", $cnpj_cpf);
 	  
+	  //Verifica se já existe um CNPJ cadastrado 
 	  $query = "SELECT cnpjTransp from transportadoras where cnpjTransp = ?";
 
 	  $stmt = $conexao->prepare($query);
@@ -114,7 +115,7 @@ public function Insert(){
 	  									window.location.href = '../insert.html';</script>";
 	  }
 	  else{
-  //Inseri no banco de dados
+  		//Inseri no banco de dados
 			$sql = "INSERT INTO transportadoras (codigo,razaoSocial,estadoTransp,nomeFantasia,cnpjTransp,apoliceTransp) VALUES(NULL,?,?,?,?,?)";
 
 
@@ -352,6 +353,7 @@ public function Confirmar(){
 		//Transforma a sigla do estado em maiuscula 
 		$estadoTransp = strtoupper($this->estadoTransp);
 
+	  //Verifica se já existe um CNPJ cadastrado 
 		$query = "SELECT cnpjTransp from transportadoras where cnpjTransp = ?";
 
 	  $stmt = $conexao->prepare($query);
