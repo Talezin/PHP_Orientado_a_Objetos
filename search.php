@@ -1,7 +1,7 @@
 <link rel="stylesheet" type="text/css" href="css/search.css">
 <div class="formulario">
-<form method="POST" action="cls.php">
-        <input type="text" name="codigo" placeholder="Nome Fantasia">
+<form method="POST" action="php/cls.php">
+        <input type="text" name="codigo" placeholder="Código">
             <h1>ou</h1>
             <select name="opcao">
                 <option value="">Listar por...</option>

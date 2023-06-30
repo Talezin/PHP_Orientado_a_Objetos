@@ -77,5 +77,52 @@ $search->Search();
 //=======================================================
 
 //--ALTERAR--
-//????????
+
+elseif ($botao == "Alterar"){
+
+//Atribui as variaveis
+$codigo = $_POST['codigo'];
+
+//Chama a função adequada
+include "funcao.php";
+
+$search = new clsGeren();
+
+$search->setcodigo($codigo);
+
+$search->Update();
+
+}
+
+//=======================================================
+
+//--CONFIRMAR--
+
+elseif ($botao == "Confirmar") {
+
+//Atribui as variaveis
+$codigo=$_POST['codigo'];	
+$razaoSocial=$_POST['razaoSocial'];
+$estadoTransp=$_POST['estadoTransp'];
+$nomeFantasia=$_POST['nomeFantasia'];
+$cnpjTransp=$_POST['cnpjTransp'];
+$apoliceTransp=$_POST['apoliceTransp'];
+
+//Chama a função adequada
+include "funcao.php";
+
+$Confirmar = new clsGeren();
+
+$Confirmar->setrazaoSocial($codigo);
+$Confirmar->setrazaoSocial($razaoSocial);
+$Confirmar->setestadoTransp($estadoTransp);
+$Confirmar->setnomeFantasia($nomeFantasia);
+$Confirmar->setcnpjTransp($cnpjTransp);
+$Confirmar->setapoliceTransp($apoliceTransp);
+
+$Confirmar->Confirmar();
+
+}
+
+
 ?>
